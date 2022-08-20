@@ -22,6 +22,7 @@ a {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 .nombre-sitio {
@@ -53,3 +54,21 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+.categorias h2 {
+    text-align: center;
+}
+
+.categoria a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categoria a:hover{
+    background-color: #037bc0;
+    color: white;
+    border-bottom-right-radius: 10px ;
+}
+
