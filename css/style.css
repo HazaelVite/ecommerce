@@ -33,7 +33,8 @@ a {
 .nav-principal {
     padding: 20px 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero {
