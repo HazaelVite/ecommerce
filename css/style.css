@@ -10,11 +10,22 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
+    line-height: 2;
 }
 
 /* Globales */
 h1, h2, h3{
     font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
 }
 a {
     text-decoration: none;
@@ -39,7 +50,6 @@ img {
 
 .nombre-sitio {
     margin-top: 5rem;
-    margin-bottom: 5rem;
     text-align: center;
 }
 
@@ -58,6 +68,7 @@ img {
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center top;
     height: 55rem;
 }
 
@@ -65,6 +76,10 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+}
+
+.categorias {
+    padding-top: 5rem;
 }
 
 .categorias h2 {
@@ -84,3 +99,22 @@ img {
     border-bottom-right-radius: 1rem ;
 }
 
+/* bloque nosotros */
+.sobre-nosotros {
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(../img/nosotros.jpg);
+    padding: 10rem 0;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%, 100rem;
+}
+
+.sobre-nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6rem;
+}
+
+.texto-nosotros {
+    color: white;
+    grid-column: 2 / 3;
+}
