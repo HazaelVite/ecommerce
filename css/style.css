@@ -1,9 +1,11 @@
-
 html {
     box-sizing: border-box;
-    font-size: 62.5%; 
+    font-size: 62.5%;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -14,25 +16,44 @@ body {
 }
 
 /* Globales */
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: 'Playfair Display', serif;
     margin: 0 0 5rem 0;
 }
+
 h1 {
     font-size: 5rem;
 }
+
 h2 {
     font-size: 4rem;
 }
+
 h3 {
     font-size: 3rem;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
 
 /* Utilidades */
+.btn {
+    background-color: #8cbc00;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out ;
+}
+
+.btn:hover {
+    background-color: #769c02;
+}
 .text-center {
     text-align: center;
 }
@@ -40,6 +61,7 @@ a {
 header {
     font-size: 4rem;
 }
+
 .contenedor-navegacion {
     border-top: 1px solid #e1e1e1;
 }
@@ -88,17 +110,17 @@ img {
     padding-top: 5rem;
 }
 
-.categoria a{
+.categoria a {
     display: block;
     text-align: center;
     padding: 2rem;
     font-size: 2rem;
 }
 
-.categoria a:hover{
+.categoria a:hover {
     background-color: #037bc0;
     color: white;
-    border-bottom-right-radius: 1rem ;
+    border-bottom-right-radius: 1rem;
 }
 
 /* bloque nosotros */
@@ -127,6 +149,7 @@ img {
 }
 
 .listado-productos {
+    display: grid;
     
 }
 
@@ -137,7 +160,9 @@ img {
 .texto-producto {
     text-align: center;
     color: #fff;
+    padding: 2rem;
 }
+
 .texto-producto h3 {
     margin: 0;
 }
@@ -150,6 +175,7 @@ img {
     font-size: 2.8rem;
     font-weight: 900;
 }
- .texto-producto a {
 
- }
+.productos img:hover {
+    transform: scale();
+}
